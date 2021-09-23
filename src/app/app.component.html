@@ -1,16 +1,25 @@
 <div class="brandingImgWrap">
-    <img src="https://ecampus.wvu.edu/branding/themes/BbLearn2016WVU/images/eCampusLogo.png" alt="eCampus Logo Image" title="eCampus Logo Image">
+  <img src="https://ecampus.wvu.edu/branding/themes/BbLearn2016WVU/images/eCampusLogo.png" alt="eCampus Logo Image"
+    title="eCampus Logo Image">
 
-<ul>
-    <li class="font-size">
-      <img src="https://learn.content.blackboardcdn.com/3900.21.0-rel.21+e2c25ca/images/ci/ng/fonts.gif" alt=""> 
-      <a href="#" title="Change Text Size" onclick="page.showChangeTextSizeHelp()">Change Text Size</a>
-    </li>
-    <li class="contrast">
-      <img src="https://learn.content.blackboardcdn.com/3900.21.0-rel.21+e2c25ca/images/ci/ng/contrast.gif" alt=""> 
-      <a href="#" title="High Contrast Setting" onclick="page.showAccessibilityOptions(); return false;">High Contrast Setting</a>
-    </li>
-  </ul>
+  <div class="position-absolute top-0 end-0">
+    <table class="appTabs transparent" id="appTabList">
+      <tbody>
+        <tr>
+          <td id="Text-Size">
+            <a href="https://ecampus.wvu.edu/webapps/blackboard/execute/viewExtendedHelp?internalhandle=change_text_size&helpkey=change_text_size"
+              target="_blank"><span><img src="https://learn.content.blackboardcdn.com/3900.21.0-rel.21+e2c25ca/images/ci/ng/fonts.gif" alt=""></span>
+            </a>
+          </td>
+          <td id="Contrast-Setting">
+            <a href="https://ecampus.wvu.edu/webapps/portal/execute/changePersonalStyle?cmd=showAccessibilityOptions"
+              target="_blank"><span><img src="https://learn.content.blackboardcdn.com/3900.21.0-rel.21+e2c25ca/images/ci/ng/contrast.gif" alt=""></span>
+            </a>
+          </td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 </div>
 <app-top-nav-bar>Loading</app-top-nav-bar>
 <app-layout-main>Loading layout</app-layout-main>
