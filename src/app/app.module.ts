@@ -11,6 +11,7 @@ import { TwoComponent } from './body/c-two.component';
 import { ThreeComponent } from './body/d-three.component';
 import { FourComponent } from './body/e-four.component';
 import { FiveComponent } from './body/f-five.component';
+import { CardComponent } from './body/card.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import { FiveComponent } from './body/f-five.component';
     TwoComponent,
     ThreeComponent,
     FourComponent,
-    FiveComponent
+    FiveComponent,
+    CardComponent
   ],
   imports: [
     BrowserModule,

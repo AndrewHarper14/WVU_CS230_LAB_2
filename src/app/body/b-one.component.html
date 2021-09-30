@@ -1,4 +1,11 @@
-<div style="background-color:red">One</div>
+<div *ngFor="let card of cards">
+    <ecampus-card 
+    title={{card.title}} 
+    text={{card.text}} 
+    link={{card.link}} 
+    image={{card.image}}></ecampus-card>
+</div>
+
 
 <div class="loginFooter">
     <p>All course materials, including lectures, class roles, quizzes, exams, handouts, presentations, and other
