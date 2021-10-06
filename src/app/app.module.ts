@@ -12,6 +12,8 @@ import { ThreeComponent } from './body/d-three.component';
 import { FourComponent } from './body/e-four.component';
 import { FiveComponent } from './body/f-five.component';
 import { CardComponent } from './body/card.component';
+import { HttpClientModule } from '@angular/common/http';
+import { UserInfoComponent } from './header/user-info.component';
 
 @NgModule({
   declarations: [
@@ -24,11 +26,13 @@ import { CardComponent } from './body/card.component';
     ThreeComponent,
     FourComponent,
     FiveComponent,
-    CardComponent
+    CardComponent,
+    UserInfoComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
