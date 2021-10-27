@@ -14,6 +14,9 @@ import { FiveComponent } from './body/f-five.component';
 import { CardComponent } from './body/card.component';
 import { HttpClientModule } from '@angular/common/http';
 import { UserInfoComponent } from './header/user-info.component';
+import { CourseInfoComponent } from './format/course-info.component';
+import { EditCourseInfoComponent } from './body/edit-course-info.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -27,12 +30,15 @@ import { UserInfoComponent } from './header/user-info.component';
     FourComponent,
     FiveComponent,
     CardComponent,
-    UserInfoComponent
+    UserInfoComponent,
+    CourseInfoComponent,
+    EditCourseInfoComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

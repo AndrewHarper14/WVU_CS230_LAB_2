@@ -1,0 +1,41 @@
+<div class="container-fluid">
+    <div class="card p-2 m-4">
+        <form #postForm="ngForm" (ngSubmit)="onUpdateCourseInfo(postForm.value)">
+            <h5 class="card-header">
+                <div class="input-group">
+                    <span class="input-group-text">Title</span>
+                    <input type="text" class="form-control" ngModel name="Title">
+                </div>
+            </h5>
+            <div class="card mb-3">
+                <div class="row g-0">
+                    <div class="col-md-4" style="max-width: 60px;">
+                        <div class="input-group">
+                            <span class="input-group-text">Image</span>
+                            <input type="text" class="form-control" ngModel name="Image">
+                        </div>
+                    </div>
+                    <div class="col-md-11">
+                        <div class="card-body">
+                            <h5 class="card-title">
+                                <div class="input-group">
+                                    <span class="input-group-text">Topic</span>
+                                    <input type="text" class="form-control" ngModel name="Link">
+                                </div>
+                            </h5>
+                            <p class="card-text">
+                            <div class="input-group">
+                                <span class="input-group-text">Description</span>
+                                <input type="text" class="form-control" ngModel name="Text">
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn btn-primary" type="confirm">
+                        Update Course Info
+                    </button>
+                </div>
+            </div>
+        </form>
+
+    </div>
+</div>
