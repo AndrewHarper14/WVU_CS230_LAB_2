@@ -1,6 +1,7 @@
 import { Component } from "@angular/core";
 import { CourseInfo } from "../format/course-info.module";
 import { CourseInfoService } from "../format/course-info.service";
+import { DatabaseService } from "./database.service";
 
 @Component({
     selector: 'ecampus-edit-course-info',
@@ -8,8 +9,8 @@ import { CourseInfoService } from "../format/course-info.service";
 })
 
 export class EditCourseInfoComponent {
-    constructor(public CinfoService: CourseInfoService) {
-
+    constructor(public CinfoService: CourseInfoService, private dbService: DatabaseService) {
+        dbService.showData();
     }
 
     onUpdateCourseInfo(data:CourseInfo) {
