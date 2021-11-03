@@ -101,6 +101,16 @@
             ],
             "scripts": []
           }
+        },
+        "deploy": {
+          "builder": "@angular/fire:deploy",
+          "options": {
+            "prerender": false,
+            "ssr": false,
+            "browserTarget": "Ecampus:build:production",
+            "firebaseProject": "ecampus-app-6b2aa",
+            "firebaseHostingSite": "ecampus-app-6b2aa"
+          }
         }
       }
     }

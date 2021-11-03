@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "ecampus-app-6b2aa": {
+      "hosting": {
+        "Ecampus": [
+          "ecampus-app-6b2aa"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "ecampus-app-6b2aa"
+  }
+}
